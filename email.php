@@ -23,9 +23,16 @@ $header = "From:lapetitpao@gmail.com"."\r\n".
 
 //funcao retorna true ou false
 if (mail($to,$subject,$body,$header)){
-    echo("Email Enviado com Sucesso"); 
+    echo "<script>
+    alert('E-mail enviado com sucesso!'); 
+    location= './contato.html';
+    </script>";
+     
 }else{
-    echo("O email não pôde ser enviado");
+    echo "<script>
+    alert('E-mail não enviado!'); 
+    location= './contato.html';
+	</script>";
 }
 
 }
