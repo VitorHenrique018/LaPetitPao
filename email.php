@@ -10,14 +10,14 @@ $assunto = addslashes($_POST['assunto']);
 $mensagem = addslashes($_POST['mensagem']);
 
 //montar a mensagem e pra quem enviar
-$to = "vitorhenrique018@gmail.com";
+$to = "opaonossopanificadora@gmail.com";
 $subject = "Site Panificadora";
 $body = "Nome: ".$nome."\n".
         "Email: ".$email."\n".
         "Assunto: ".$assunto."\n".
         "Mensagem: ".$mensagem;
 
-$header = "From:lapetitpao@gmail.com"."\r\n".
+$header = "From:vitorhenrique018@gmail.com"."\r\n".
            "Reply-To:".$email."\r\n".
            "X=Mailer:PHP/".phpversion();
 
@@ -34,7 +34,5 @@ if (mail($to,$subject,$body,$header)){
     location= './contato.html';
 	</script>";
 }
-
 }
-
 ?>
