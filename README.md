@@ -1,3 +1,1 @@
-www.lapetipao.com 
-
-É o dominio da Aplicação
+Website da panificadora La Petit Pão, que fica localizada em Goiânia-GO.
